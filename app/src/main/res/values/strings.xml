@@ -1,0 +1,3 @@
+<resources>
+    <string name="app_name">Freeze Main thread with Coroutines example</string>
+</resources>
