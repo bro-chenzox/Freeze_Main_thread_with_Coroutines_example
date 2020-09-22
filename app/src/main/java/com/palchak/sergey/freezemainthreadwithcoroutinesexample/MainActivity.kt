@@ -26,6 +26,7 @@ class MainActivity : AppCompatActivity() {
     private fun main() {
         CoroutineScope(Main).launch {
             // Due to very large number of coroutines Main thread will be frozen
+            // In real app it is prohibited to use Main thread for network requests!!!!!!
             for (i in 1..100_000) {
                 launch {
                     doNetworkRequest(i)
